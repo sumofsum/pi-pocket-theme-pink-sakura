@@ -3,7 +3,7 @@
 A light pink theme for [Pi Pocket](https://github.com/TannerMidd/pi-pocket), with a seamless sakura
 wallpaper.
 
-![Pink Sakura](preview.png)
+![Pink Sakura](screenshot.png)
 
 On a phone:
 
