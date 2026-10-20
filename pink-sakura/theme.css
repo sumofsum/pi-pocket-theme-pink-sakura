@@ -1,0 +1,51 @@
+/*
+ * Pink Sakura: Light Pink by daylight, with a seamless sakura wallpaper.
+ *
+ * The blossoms are cut from one generated render and scattered on a torus, so the 1024 px tile repeats with no seam:
+ * it shows in the gaps between the tiled windows, and through the windows because they are half transparent. Raise
+ * the 50% for plainer text, lower it to let more of the garden in.
+ *
+ * colors.toml carries the palette, so choosing this theme brings it; Colors can be changed afterwards and the theme
+ * stays. The guide is docs/extensions/themes.md, and every token and part is in
+ * docs/extensions/reference/theme-surface.md.
+ */
+
+:root {
+    /* The π mark, and the second color of loaders and thoughts. */
+    --brand: var(--o-accent);
+    --spark: var(--o-magenta);
+
+    /* The text on an accent-filled button: white reads at 5.9:1 on the deep pink. */
+    --accent-ink: #fff;
+
+    /* Tiled at its own size rather than stretched to cover, which is what the app does by default. */
+    --wallpaper: url("images/sakura-tile.png");
+}
+
+:root[data-mode="light"] {
+    /* Code, in Pi's theme colors darkened for a blush ground: each reads at 5:1 or better on --code-bg. */
+    --hl-kw: #b3145a; /* keywords: deep pink */
+    --hl-str: #9a4a1f; /* strings: warm brown */
+    --hl-num: #7b3fa0; /* numbers: plum */
+    --hl-fn: #a02c62; /* functions: raspberry */
+    --hl-type: #6b4a9e; /* types: violet */
+    --hl-op: #0b6e7f; /* operators: teal */
+    --hl-tag: #a32b2b; /* tags */
+
+    /* A shadow tinted with the plum dark, not grey. */
+    --sh: rgba(74, 36, 54, 0.16);
+}
+
+/* The wallpaper: in the gaps, and under the windows. */
+[data-part="app"] {
+    background: var(--desk) var(--wallpaper, none) 0 0 / auto repeat;
+}
+
+[data-part="sidebar"] {
+    background: color-mix(in srgb, var(--panel) 50%, transparent);
+}
+
+[data-part="pane"],
+[data-part="drawer"] {
+    background: color-mix(in srgb, var(--bg) 50%, transparent);
+}

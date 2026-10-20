@@ -1,0 +1,24 @@
+# Pink Sakura: Light Pink's palette by daylight, in Omarchy's format. A blush-white ground, plum-pink text, and a deep
+# pink accent that keeps its contrast on the light ground (body 12.4:1, muted 6.5:1, accent 5.5:1).
+mode = "light"
+
+accent = "#c2185b"            # deep pink: the one pink dark enough to read on blush white
+selection = "#ffd3e3"
+
+background = "#fff6f9"        # blush white
+dark_background = "#ffeaf2"   # code blocks and the sidebar
+darker_background = "#f7d9e6" # behind the tiled windows
+lighter_background = "#ffdfec" # cards, a little raised
+
+foreground = "#4a2436"        # plum-pink running text
+dark_foreground = "#7d4b60"   # quiet text
+light_foreground = "#3d1e2c"
+bright_foreground = "#331a26" # titles
+
+red = "#a32b2b"
+yellow = "#8a6a12"
+orange = "#9a4a1f"
+green = "#3d6b2f"
+cyan = "#0b6e7f"
+blue = "#4a5f9e"
+magenta = "#8a3f80"
