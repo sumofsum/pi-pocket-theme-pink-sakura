@@ -5,6 +5,10 @@ wallpaper.
 
 ![Pink Sakura](preview.png)
 
+On a phone:
+
+<img src="phone.png" alt="Pink Sakura on a phone" width="390">
+
 The blossoms are cut from a generated render and scattered on a torus, so the 1024 px tile repeats with
 no seam. It tiles in the gaps between the tiled windows and shows through them: the sidebar and the
 conversation are half transparent. The palette travels with the theme (blush-white ground, plum text,
